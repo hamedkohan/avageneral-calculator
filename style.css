@@ -1,0 +1,31 @@
+/* This file is for custom CSS. 
+  We are mostly using Tailwind CSS, so this can be kept minimal.
+*/
+
+body {
+  margin: 0; /* Remove default browser margin */
+  min-height: 100vh; /* Make sure body takes at least full screen height */
+  background-color: #f8fafc; /* A light grey background color */
+}
+
+/* Fix for number input spinners (optional) */
+/* Hide spin button */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+/* Style for the <kbd> tag used in the print modal */
+kbd {
+    background-color: #f3f4f6; /* light grey */
+    border: 1px solid #e5e7eb; /* slightly darker grey */
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 0.85em;
+    font-family: monospace; /* Use a code font */
+    color: #1f2937; /* dark grey text */
+}
